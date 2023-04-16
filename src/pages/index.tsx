@@ -9,7 +9,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1>hello world! This is writer service!!</h1>
+        <h1>writer 서비스에요!</h1>
       </main>
     </div>
   );
