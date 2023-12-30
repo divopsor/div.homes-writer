@@ -2,12 +2,11 @@
   "name": "@divopsor/div.homes-writer",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "LOCAL=true next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "test -n $SKIP_INSTALL || config-cli",
-    "prepare": "husky install"
+    "prepare": "husky install && cd ../../ && yarn config-cli div.homes/writer"
   },
   "dependencies": {
     "@babel/core": "^7.19.1",
@@ -16,7 +15,6 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@divopsor/frontend-configs-cli": "workspace:^",
     "@types/babel__core": "^7",
     "@types/eslint": "^8",
     "@types/node": "18.7.18",
